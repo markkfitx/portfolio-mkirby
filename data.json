@@ -1,0 +1,16 @@
+{
+    "navigation": [
+        {
+            "label": "About Me",
+            "url":"/about"
+        },
+        {
+            "label": "Works",
+            "url":"/work"
+        },
+        {
+            "label": "Connect",
+            "url":"/connect"
+        }
+    ]
+}
