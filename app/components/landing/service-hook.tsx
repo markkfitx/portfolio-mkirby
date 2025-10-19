@@ -1,13 +1,14 @@
 import Image from "next/image"
 import avatarImage from "../../../img/avatar.jpg"
+import SubTitle from "@/app/components/sub-title"
 
 export default function ServicesHook(){
     return(
         <div className="grid grid-cols-[auto_1fr] gap-16">
-            <div className="section-header">
-                <h2>Hi There!</h2>
-                <p className="mt-2 italic">I connect design and code with</p>
-            </div>
+            <SubTitle
+                title="Hi There!"
+                subText="I connect design and code with"
+            />
             <div className="relative flex justify-center md:justify-end mt-12 md:mt-0 top-[3rem]">
                 <div className="absolute bottom-0 right-0 w-[650px] h-2/3 bg-[rgba(255,255,255,0.1)] translate-x-4 translate-y-4 rounded-md hidden md:block">
                     <div className="space-y-3 mt-8 text-lg tracking-wide relative right-[6px]">
