@@ -127,6 +127,7 @@
 
   body {
     @apply bg-background text-foreground;
+    color:white;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -136,9 +137,19 @@
     @apply m-0 uppercase font-sans;
   }
 }
-
+h2{
+  font-size: 100px;
+  line-height:0.8;
+}
+p{
+  letter-spacing:0.15rem;
+}
 .hero h1{
-  color:white;
   font-size: 240px;
+  line-height:0.8;
+}
+.section-header p{
+  text-transform: uppercase;
+  font-size: 25px;
   line-height:0.8;
 }
