@@ -112,11 +112,33 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@font-face {
+  font-family: 'HelveticaNowDisplay';
+  src: url('../lib/fonts/HelveticaNowDisplay-Black.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'HelveticaNowDisplay', sans-serif !important;
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+    @apply m-0 uppercase font-sans;
+  }
+}
+
+.hero h1{
+  color:white;
+  font-size: 240px;
+  line-height:0.8;
 }
