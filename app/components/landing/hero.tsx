@@ -56,10 +56,10 @@ export default function Hero(){
                                     <Plus size={40} strokeWidth={1.5} absoluteStrokeWidth className="relative left-[8px] text-white group-hover:text-lime-400 transition-colors duration-200 animate-pulse" />
                                 </button>
                                 <button onClick={() => setYear(getCurrentYear())} className="group">
-                                    <X size={40} strokeWidth={1.5} absoluteStrokeWidth className="relative right-[4px] text-white group-hover:text-yellow-400 animate-pulse transition-all duration-200" />
+                                    <X size={40} strokeWidth={1.5} absoluteStrokeWidth className="relative right-[4px] text-white group-hover:text-lime-400 animate-pulse transition-all duration-200" />
                                 </button>
                                 <button onClick={() => setYear((prev) => prev -1)} className="group">
-                                    <Minus size={40} strokeWidth={1.5} absoluteStrokeWidth className="relative right-[16px] text-white group-hover:text-red-400 animate-pulse transition-colors duration-200" />
+                                    <Minus size={40} strokeWidth={1.5} absoluteStrokeWidth className="relative right-[16px] text-white group-hover:text-lime-400 animate-pulse transition-colors duration-200" />
                                 </button>
                             </div>
                         </div>
