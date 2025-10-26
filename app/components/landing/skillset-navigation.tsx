@@ -1,7 +1,62 @@
+"use client"
 import { ArrowDown } from "lucide-react"
 import Image from "next/image"
 import HelloWorld from "@/img/hello-world-html-code.png"
-
+import type { BundledLanguage } from '@/components/ui/shadcn-io/code-block';
+import {
+  CodeBlock,
+  CodeBlockBody,
+  CodeBlockContent,
+  CodeBlockItem,
+} from '@/components/ui/shadcn-io/code-block';
+const code = [
+  {
+    language: 'jsx',
+    filename: 'MyComponent.jsx',
+    code: `function MyComponent(props) {
+  cont [number, incrementNbr] = setState(0);
+  return (
+    <div>
+      <h1>Current Number: {number}</h1>
+      <p>This is an example React component.</p>
+      <p>This component displays a simple React hook example.</p>
+      <p>Not only is it an example React component, but it is also a 
+      valid block of HTML.</p>
+      <button onClick={incrementNbr((prev) => prev + 1)}>Click Me</button>
+    </div>
+  );
+}`,
+  },
+  {
+    language: 'tsx',
+    filename: 'MyComponent.tsx',
+    code: `function MyComponent(props: { name: string }) {
+  return (
+    <div>
+      <h1>Current Number: {number}</h1>
+      <p>This is an example React component.</p>
+      <p>This component displays a simple React hook example.</p>
+      <p>Not only is it an example React component, but it is also a 
+      valid block of HTML.</p>
+      <button onClick={incrementNbr((prev) => prev + 1)}>Click Me</button>
+    </div>
+  );
+}`,
+  },
+];
+const Example = () => (
+  <CodeBlock data={code} defaultValue={code[0].language} className="bg-trans-gray" >
+    <CodeBlockBody>
+      {(item) => (
+        <CodeBlockItem key={item.language} value={item.language}>
+          <CodeBlockContent language={item.language as BundledLanguage}>
+            {item.code}
+          </CodeBlockContent>
+        </CodeBlockItem>
+      )}
+    </CodeBlockBody>
+  </CodeBlock>
+);
 export default function SkillsetNav(){
     return(
          <div className="grid grid-cols-[auto_1fr] gap-50">
@@ -35,7 +90,9 @@ export default function SkillsetNav(){
                 </div>
             </div>
             <div className="p-4">
-                <Image src={HelloWorld} alt="Hello World HTML image example" className="grayscale max-w-[650px]" />
+                <Example />
+                {/*<Image src={HelloWorld} alt="Hello World HTML image example" className="grayscale max-w-[650px]" />*/}
+
             </div>
          </div>
     )

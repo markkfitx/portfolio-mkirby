@@ -1,4 +1,5 @@
 "use client"
+import { SlidingNumber } from "@/components/ui/shadcn-io/sliding-number";
 import {Plus, X, Minus, ChevronDown} from "lucide-react"
 import Image from "next/image"
 import { useState } from "react"
@@ -26,7 +27,18 @@ export default function Hero(){
                         <h1>Code</h1>
                         <div className="flex flex-row justify-center items-center flex-1 gap-6">
                             <p className="border-2 border-white rounded-full text-white text-md px-3 font-medium flex items-center h-8">
-                                2020 - {year}
+                                <SlidingNumber
+                                    number={2020}
+                                    inView={true}
+                                    decimalPlaces={0}
+                                    transition={{ stiffness: 200, damping: 15 }}
+                                /> - 
+                                <SlidingNumber
+                                    number={year}
+                                    inView={true}
+                                    decimalPlaces={0}
+                                    transition={{ stiffness: 200, damping: 15 }}
+                                />
                             </p>
                             <div className="flex flex-row gap-0 items-center justify-center">
                                 <button onClick={() => setYear((prev) => prev +1)} className="group">
