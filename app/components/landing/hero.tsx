@@ -33,7 +33,7 @@ export default function Hero(){
                             cursorCharacter="|"
                             cursorClassName="h-12 text-white"
                             className="text-4xl font-bold grayscale min-w-[55vw]"
-                            textColors={['#fff', '#fff', '#fff']}
+                            textColors={['#fff', '#fff']}
                             variableSpeed={{ min: 50, max: 120 }}
                         />
                         <div className="flex flex-row justify-center items-center flex-1 gap-6">

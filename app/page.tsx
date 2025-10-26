@@ -8,8 +8,8 @@ export default function Home({children,}: Readonly<{children: React.ReactNode;}>
     <div className="w-full flex flex-col items-center justify-center xl:gap-150 lg:gap-100 md:gap-50 gap-25 xl:mb-100 lg:mb-75 md:mb-50 mb-25">
       <Hero/>
       <ServicesHook id="services" />
-      <SkillsetNav />
       <About id="about"/>
+      <SkillsetNav />
     </div>
   );
 }
