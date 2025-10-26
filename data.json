@@ -1,14 +1,28 @@
 {
     "navigation": [
         {
-            "label": "About Me",
+            "label": "About",
             "url":"/about"
         },
         {
-            "label": "Works",
+            "label": "Portfolio",
             "url":"/work"
         },
         {
+            "label": "Connect",
+            "url":"/connect"
+        }
+    ],
+    "footer": [
+         {
+            "label": "About",
+            "url":"/about"
+        },
+         {
+            "label": "Portfolio",
+            "url":"/work"
+        },
+         {
             "label": "Connect",
             "url":"/connect"
         }
