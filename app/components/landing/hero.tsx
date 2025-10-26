@@ -1,5 +1,6 @@
 "use client"
 import { SlidingNumber } from "@/components/ui/shadcn-io/sliding-number";
+import TypingText from "@/components/ui/shadcn-io/typing-text";
 import {Plus, X, Minus, ChevronDown} from "lucide-react"
 import Image from "next/image"
 import { useState } from "react"
@@ -24,7 +25,17 @@ export default function Hero(){
                 <div className="col"><h1>Beyond</h1></div>
                 <div className="col">
                     <div className="flex flex-row items-center justify-baseline">
-                        <h1>Code</h1>
+                        <TypingText
+                            text={["CODE","DESIGN"]}
+                            typingSpeed={50}
+                            pauseDuration={3000}
+                            showCursor={true}
+                            cursorCharacter="|"
+                            cursorClassName="h-12 text-white"
+                            className="text-4xl font-bold grayscale min-w-[55vw]"
+                            textColors={['#fff', '#fff', '#fff']}
+                            variableSpeed={{ min: 50, max: 120 }}
+                        />
                         <div className="flex flex-row justify-center items-center flex-1 gap-6">
                             <p className="border-2 border-white rounded-full text-white text-md px-3 font-medium flex items-center h-8">
                                 <SlidingNumber
