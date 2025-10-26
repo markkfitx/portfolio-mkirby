@@ -2,14 +2,17 @@ import Image from "next/image"
 import avatarImage from "../../../img/avatar.jpg"
 import SubTitle from "@/app/components/sub-title"
 
-export default function ServicesHook(){
+interface componentObj{
+    id: string
+}
+export default function ServicesHook({id}:componentObj){
     return(
         <div className="grid grid-cols-[auto_1fr] gap-16">
             <SubTitle
                 title="Hi There!"
                 subText="I connect design and code with"
             />
-            <div className="relative flex justify-center md:justify-end mt-12 md:mt-0 top-[3rem]">
+            <div className="relative flex justify-center md:justify-end mt-12 md:mt-0 top-[3rem]" id={id}>
                 <div className="absolute bottom-0 right-0 w-[650px] h-2/3 bg-trans-gray translate-x-4 translate-y-4 rounded-md hidden md:block">
                     <div className="space-y-3 mt-8 text-lg tracking-wide relative right-[6px]">
                         <div className="flex items-center gap-3">

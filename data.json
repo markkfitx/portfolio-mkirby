@@ -2,29 +2,37 @@
     "navigation": [
         {
             "label": "About",
-            "url":"/about"
+            "url":"#about"
+        },
+        {
+            "label":"Services",
+            "url":"#services"
         },
         {
             "label": "Portfolio",
-            "url":"/work"
+            "url":"#portfolio"
         },
         {
             "label": "Connect",
-            "url":"/connect"
+            "url":"#connect"
         }
     ],
     "footer": [
-         {
+        {
             "label": "About",
-            "url":"/about"
+            "url":"#about"
         },
-         {
+        {
+            "label":"Services",
+            "url":"#services"
+        },
+        {
             "label": "Portfolio",
-            "url":"/work"
+            "url":"#portfolio"
         },
-         {
+        {
             "label": "Connect",
-            "url":"/connect"
+            "url":"#connect"
         }
     ]
 }

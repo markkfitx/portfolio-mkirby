@@ -4,9 +4,12 @@ import avatarImage from "../../../img/avatar.jpg"
 import Link from "next/link"
 import { BookOpenCheck } from "lucide-react"
 
-export default function About(){
+interface componentObj{
+    id: string
+}
+export default function About({id}: componentObj){
     return(
-        <div className="grid grid-cols-[auto_1fr] gap-16">
+        <div className="grid grid-cols-[auto_1fr] gap-16" id={id}>
             <div className="relative flex justify-center md:justify-end mt-12 md:mt-0 top-[3rem]">
                 <div className="absolute bottom-0 left-0 w-[650px] h-2/3 bg-trans-gray -translate-x-4 translate-y-4 rounded-md hidden md:block">
                     <div className="space-y-8 mt-8 text-lg tracking-wide relative left-125">
